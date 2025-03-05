@@ -43,7 +43,6 @@ def findPolygonBounds(points):
             topY = point.y
         if(point.y > bottomY):
             bottomY = point.y
-        print(point)
     return (leftX, rightX, topY, bottomY)
 
 def scrollPolygon(points, leftX, topY):
@@ -116,4 +115,3 @@ while run:
                 win.blit(surf, (origin.x-surf.get_width()/2, origin.y-surf.get_height()/2))
                 pygame.display.update()
 
-#Wniosek: nie chcę już pracować z tą biblioteką, chcę wrócić do godota albo nawet canvasa, jest przestarzala
